@@ -13,11 +13,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.ozcanalasalvar.wheelview.InfiniteWheelView
+import com.ozcanalasalvar.wheelview.WheelView
 import com.ozcanalasalvar.wheelview.SelectorOptions
 
 
@@ -45,7 +46,7 @@ fun TextPickerScreen(modifier: Modifier = Modifier) {
 
         Row {
             Box(modifier = Modifier.weight(1f)) {
-                InfiniteWheelView(modifier = Modifier,
+                WheelView(modifier = Modifier,
                     itemSize = DpSize(150.dp, 25.dp),
                     selection = 5,
                     itemCount = list.size,
@@ -66,114 +67,9 @@ fun TextPickerScreen(modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.width(10.dp))
 
             Box(modifier = Modifier.weight(1f)) {
-                InfiniteWheelView(modifier = Modifier,
+                WheelView(modifier = Modifier,
                     itemSize = DpSize(150.dp, 25.dp),
                     selection = 5,
-                    isEndless = false,
-                    itemCount = list.size,
-                    rowOffset = 2,
-                    onFocusItem = {
-
-                    },
-                    content = {
-                        Text(
-                            text = list[it].toString(),
-                            textAlign = TextAlign.Start,
-                            fontSize = 17.sp,
-                            color = Color.Black
-                        )
-                    })
-            }
-        }
-
-        Spacer(modifier = Modifier.height(40.dp))
-
-        Row {
-            Box(modifier = Modifier.weight(1f)) {
-                InfiniteWheelView(modifier = Modifier,
-                    itemSize = DpSize(150.dp, 25.dp),
-                    selection = 5,
-                    itemCount = list.size,
-                    selectorOption = SelectorOptions().copy(
-                        color = Color.Blue, alpha = 1f, width = 2.dp
-                    ),
-                    rowOffset = 3,
-                    onFocusItem = {
-
-                    },
-                    content = {
-                        Text(
-                            text = list[it].toString(),
-                            textAlign = TextAlign.Start,
-                            fontSize = 17.sp,
-                            color = Color.Black
-                        )
-                    })
-            }
-
-            Spacer(modifier = Modifier.width(20.dp))
-
-
-            Box(modifier = Modifier.weight(1f)) {
-                InfiniteWheelView(modifier = Modifier,
-                    itemSize = DpSize(150.dp, 25.dp),
-                    selection = 5,
-                    selectorOption = SelectorOptions().copy(
-                        color = Color.Red, alpha = 1f, width = 2.dp
-                    ),
-                    isEndless = false,
-                    itemCount = list2.size,
-                    rowOffset = 3,
-                    onFocusItem = {
-
-                    },
-                    content = {
-                        Text(
-                            text = list2[it].toString(),
-                            textAlign = TextAlign.Start,
-                            fontSize = 17.sp,
-                            color = Color.Black
-                        )
-                    })
-            }
-        }
-
-
-        Spacer(modifier = Modifier.height(40.dp))
-
-        Row {
-            Box(modifier = Modifier.weight(1f)) {
-                InfiniteWheelView(modifier = Modifier,
-                    itemSize = DpSize(150.dp, 25.dp),
-                    selection = 5,
-                    itemCount = list.size,
-                    selectorOption = SelectorOptions().copy(
-                        color = Color.Yellow, alpha = 1f, width = 2.dp
-                    ),
-                    rowOffset = 2,
-                    onFocusItem = {
-
-                    },
-                    content = {
-                        Text(
-                            text = list[it].toString(),
-                            textAlign = TextAlign.Start,
-                            fontSize = 17.sp,
-                            color = Color.Black
-                        )
-                    })
-            }
-
-            Spacer(modifier = Modifier.width(10.dp))
-
-
-            Box(modifier = Modifier.weight(1f)) {
-                InfiniteWheelView(modifier = Modifier,
-                    itemSize = DpSize(150.dp, 25.dp),
-                    selection = 5,
-                    selectorOption = SelectorOptions().copy(
-                        color = Color.Green, alpha = 1f, width = 2.dp
-                    ),
                     isEndless = false,
                     itemCount = list2.size,
                     rowOffset = 2,
@@ -182,7 +78,7 @@ fun TextPickerScreen(modifier: Modifier = Modifier) {
                     },
                     content = {
                         Text(
-                            text = list2[it].toString(),
+                            text = list[it].toString(),
                             textAlign = TextAlign.Start,
                             fontSize = 17.sp,
                             color = Color.Black
@@ -191,12 +87,11 @@ fun TextPickerScreen(modifier: Modifier = Modifier) {
             }
         }
 
-
         Spacer(modifier = Modifier.height(40.dp))
 
         Row {
             Box(modifier = Modifier.weight(1f)) {
-                InfiniteWheelView(modifier = Modifier,
+                WheelView(modifier = Modifier,
                     itemSize = DpSize(150.dp, 25.dp),
                     selection = 5,
                     itemCount = list.size,
@@ -221,7 +116,7 @@ fun TextPickerScreen(modifier: Modifier = Modifier) {
 
 
             Box(modifier = Modifier.weight(1f)) {
-                InfiniteWheelView(modifier = Modifier,
+                WheelView(modifier = Modifier,
                     itemSize = DpSize(150.dp, 25.dp),
                     selection = 5,
                     selectorOption = SelectorOptions().copy(
@@ -241,6 +136,34 @@ fun TextPickerScreen(modifier: Modifier = Modifier) {
                             color = Color.Black
                         )
                     })
+            }
+        }
+
+
+        Spacer(modifier = Modifier.height(70.dp))
+
+        Row {
+            Box(modifier = Modifier.weight(1f)) {
+                WheelView(modifier = Modifier,
+                    itemSize = DpSize(150.dp, 50.dp),
+                    selection = 5,
+                    itemCount = list.size,
+                    selectorOption = SelectorOptions().copy(
+                        color = Color.Blue, alpha = 1f, width = 2.dp
+                    ),
+                    rowOffset = 2,
+                    onFocusItem = {
+
+                    },
+                    content = {
+                        Text(
+                            text = list[it].toString(),
+                            textAlign = TextAlign.Start,
+                            fontSize = 35.sp,
+                            color = Color.Black,
+                        )
+                    })
+
             }
         }
     }

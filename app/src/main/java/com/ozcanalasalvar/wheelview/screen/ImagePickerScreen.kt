@@ -19,7 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
-import com.ozcanalasalvar.wheelview.InfiniteWheelView
+import com.ozcanalasalvar.wheelview.WheelView
 import com.ozcanalasalvar.wheelview.R
 import com.ozcanalasalvar.wheelview.SelectorOptions
 
@@ -42,7 +42,7 @@ fun ImagePickerScreen(modifier: Modifier = Modifier) {
 
         Row {
             Box(modifier = Modifier.weight(1f)) {
-                InfiniteWheelView(modifier = Modifier,
+                WheelView(modifier = Modifier,
                     itemSize = DpSize(150.dp, 25.dp),
                     selection = 1,
                     itemCount = list.size,
@@ -65,7 +65,7 @@ fun ImagePickerScreen(modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.width(10.dp))
 
             Box(modifier = Modifier.weight(1f)) {
-                InfiniteWheelView(modifier = Modifier,
+                WheelView(modifier = Modifier,
                     itemSize = DpSize(150.dp, 25.dp),
                     selection = 1,
                     isEndless = false,
@@ -90,7 +90,7 @@ fun ImagePickerScreen(modifier: Modifier = Modifier) {
 
         Row {
             Box(modifier = Modifier.weight(1f)) {
-                InfiniteWheelView(modifier = Modifier,
+                WheelView(modifier = Modifier,
                     itemSize = DpSize(150.dp, 25.dp),
                     selection = 1,
                     itemCount = list.size,
@@ -116,7 +116,7 @@ fun ImagePickerScreen(modifier: Modifier = Modifier) {
 
 
             Box(modifier = Modifier.weight(1f)) {
-                InfiniteWheelView(modifier = Modifier,
+                WheelView(modifier = Modifier,
                     itemSize = DpSize(150.dp, 25.dp),
                     selection = 1,
                     selectorOption = SelectorOptions().copy(
@@ -145,7 +145,7 @@ fun ImagePickerScreen(modifier: Modifier = Modifier) {
 
         Row {
             Box(modifier = Modifier.weight(1f), contentAlignment = Alignment.Center) {
-                InfiniteWheelView(modifier = Modifier,
+                WheelView(modifier = Modifier,
                     itemSize = DpSize(150.dp, 50.dp),
                     selection = 1,
                     itemCount = list.size,
