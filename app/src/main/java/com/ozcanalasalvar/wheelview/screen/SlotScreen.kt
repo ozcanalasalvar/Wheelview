@@ -28,7 +28,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.ozcanalasalvar.wheelview.InfiniteWheelView
+import com.ozcanalasalvar.wheelview.WheelView
 import com.ozcanalasalvar.wheelview.R
 import com.ozcanalasalvar.wheelview.SelectorOptions
 import kotlinx.coroutines.delay
@@ -69,7 +69,7 @@ fun SlotScreen() {
                     .height(IntrinsicSize.Max)
                     .padding(start = 20.dp, end = 20.dp)
             ) {
-                InfiniteWheelView(modifier = Modifier.weight(1f),
+                WheelView(modifier = Modifier.weight(1f),
                     itemSize = DpSize(150.dp, 120.dp),
                     selection = 5,
                     itemCount = list.size,
@@ -90,7 +90,7 @@ fun SlotScreen() {
 
                 Spacer(modifier = Modifier.width(10.dp))
 
-                InfiniteWheelView(modifier = Modifier.weight(1f),
+                WheelView(modifier = Modifier.weight(1f),
                     itemSize = DpSize(150.dp, 120.dp),
                     selection = 5,
                     itemCount = list.size,
@@ -111,7 +111,7 @@ fun SlotScreen() {
 
                 Spacer(modifier = Modifier.width(10.dp))
 
-                InfiniteWheelView(modifier = Modifier.weight(1f),
+                WheelView(modifier = Modifier.weight(1f),
                     itemSize = DpSize(150.dp, 120.dp),
                     selection = 5,
                     itemCount = list.size,

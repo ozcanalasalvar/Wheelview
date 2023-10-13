@@ -67,5 +67,5 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-    implementation ("com.github.ozcanalasalvar.picker:wheelview:2.0.3")
+    implementation ("com.github.ozcanalasalvar.picker:wheelview:2.0.4")
 }
