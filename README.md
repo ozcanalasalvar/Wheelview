@@ -20,7 +20,7 @@ WheelView(
   itemCount = /*itemCount*/,
   selectorOption = SelectorOptions(),
   rowOffset = /*offset*/,
-  onFocusItem = {
+  onFocusItem = { index ->
 
   },
   content = {
