@@ -64,6 +64,6 @@ dependencyResolutionManagement {
 
 ```groovy
 dependencies {
-  implementation 'com.github.ozcanalasalvar.picker:wheelview:2.0.4'
+  implementation 'com.github.ozcanalasalvar.picker:wheelview:2.0.5'
 }
 ```
