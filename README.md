@@ -1,8 +1,12 @@
 # Wheelview
 Wheelview is the picker library developed on top of Jetpack Compose.
 <br>
+
+<a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@ozcanalasalvar/0"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@ozcanalasalvar/0" alt="Recent Article 0"> 
+
 <br>
-<p align="center">
+<br>
+<p align="start">
 <img src="https://github.com/ozcanalasalvar/Wheelview/blob/main/art/textpicker.gif" width="350">
 <img src="https://github.com/ozcanalasalvar/Wheelview/blob/main/art/imagepicker.gif" width="350">
 </p>
