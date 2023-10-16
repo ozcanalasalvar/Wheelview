@@ -37,7 +37,7 @@ itemCount | Int | Size of elements we set to wheelview
 rowOffset | Int | Count of items to be shown
 isEndless | Boolean | Uses to enable or disable infinite scroll
 userScrollEnabled | Boolean | ses to enable or disable user scroll 
-selectorOption | SelectorOptions | whether the scrolling via the user gestures or accessibility actions is allowed. You can still scroll programmatically using the state even when it is disabled
+selectorOption | SelectorOptions | Whether the scrolling via the user gestures or accessibility actions is allowed. You can still scroll programmatically using the state even when it is disabled
 onFocusItem |  | Called when the values in the wheelview are updated
 content |  | composable of item
 
